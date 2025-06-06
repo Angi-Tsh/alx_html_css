@@ -58,3 +58,19 @@ display: block;}
 .tweet_button {
     color: blue;
 background-color: #ddaaaa;}
+
+@keyframes example {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+.box {
+  width: 10rem;
+  height: 100%;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 3s;
+}
