@@ -1,0 +1,156 @@
+
+.logo {
+    max-width: 50px;
+    
+}
+.logotext {font-family:'source sans pro',sans-serif;
+    font-size: 30px;
+    color: white; 
+    align-content: left;
+    text-transform: none;
+    text-decoration: none;
+}
+
+header {padding: 10px 20px;
+        color: 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle; 
+    align-items: center;
+    padding: 10px 20px;
+}
+ul{ 
+    list-style: none;
+    text-decoration: none;
+    display: flex; 
+    padding: 2px 2px;
+    margin-right: 200px;
+}
+li {
+    margin-left: 50px;
+    text-decoration: none;
+}
+a{
+      color: white;
+      font-family: 'source sans pro';
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: none;
+      text-decoration: none;
+}
+.landingBanner{
+    text-align: center; /* This centers inline-block children */
+    padding: 20px 0; 
+    margin-top: 20px;
+}
+h1 {
+    font-family: 'Source Sans Pro',sans-serif ;
+    font-size: 80px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: white;
+}
+.offers {text-transform: uppercase;
+    font-family: 'source sans pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content:center;
+    vertical-align: middle;      
+    margin-bottom: 16px;
+    color: white;
+}
+span{margin-left: 50px;}
+
+.primaryButton {color: white;
+    font-family:  'source sans pro',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    margin-top: 50px;
+    border-radius: 16px;
+    border-color: #C271FF;
+    background-color: #C271FF;
+    align-items: center;
+    justify-content: center;
+}
+button:visited {color:#b272e3;
+}
+button:hover {color: #8c10ea;
+    border-style: solid;
+}
+button:active {
+    border-style: #524e55;
+}
+h2 {
+    font-family: 'source sans pro',sans-serif;
+    font-weight: 24px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: white;
+}
+#highlightWord {color: #C271FF;
+}
+
+.pros {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 80px; 
+    padding: 6px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    gap: 0px;
+    flex-direction: row;}
+
+.box {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 2px;
+    margin: 2px;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px; /* Limit the container width */
+    width: 100%;
+    margin: 0px;
+}
+
+.prosPhotos {
+    border-radius: 50%;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 2px;
+}
+h3 {
+    font-family: 'source sans pro', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    color: white;
+}
+p {
+    font-family: 'source sans pro';
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 4px;
+    padding-top: 2px;
+    color: white;
+}
+.landing{
+    background-image: url('backgroundimg.jpg');
+    background-size: cover ;
+}
+
+@font-face {
+    font-family: 'source sans pro'; 
+    src: url('/ALX/Week\ 5\ Part\ 2/sans-serif') format('.otf'),
+         url('/ALX/Week\ 5\ Part\ 2/source) format('.otf');
+    font-weight: bold; /* This file is for the bold version */
+    font-style: normal;
+    font-display: swap;
+}
