@@ -1,0 +1,76 @@
+body, main {
+    display: flex;
+    min-height: 100vh;
+}
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Debugging the code */
+
+header {
+    height: 80px; /* Adjust as needed */
+    flex-shrink: 0; /* Prevents header from shrinking */
+}
+
+footer {
+    height: 80px; /* Adjust as needed */
+    flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #8de78c
+    border: 1px solid #13d013
+    text-align: center;
+}
+
+article {
+    background-color: #13d013;
+    border: 1px solid #0ff40f;
+}
+
+aside {
+    background-color: #ddaaad;
+    border: 1px solid #ddaaaa;
+}
+
+img {
+    max-width: 05%;
+height: auto;
+display: block;}
+
+.tweet_button {
+    color: blue;
+background-color: #ddaaaa;}
+
+@keyframes example {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+.box {
+  width: 10rem;
+  height: 100%;
+  background-color: blue;
+  animation-name: example;
+  animation-duration: 3s;
+}
