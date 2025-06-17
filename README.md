@@ -1,5 +1,5 @@
-**A Design From Scratch
-**A website design with only the UI handed over.
+**A Design From Scratch**
+A website design with only the UI handed over.
 
 🌟 Features
 Key Feature 1: Equipped with a landing banner, clear CTA, information heirachy and blocks.
