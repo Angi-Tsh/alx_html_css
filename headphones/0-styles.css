@@ -1,8 +1,73 @@
+.logo {
+    max-width: 150px;
+    margin-left: 200px;
+}
+
+
+.landingBanner{
+    text-align: center; 
+    padding: 20px 0; 
+    margin-top: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landing {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    max-height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 0;
+}
+
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+header,
+main {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
 
 .logo {
     max-width: 150px;
-    margin-left: 128px;
+    position: relative;
+    z-index: 3;
 }
+
+.landingBanner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
 
 header {padding: 10px 20px;
 }
@@ -33,16 +98,11 @@ a{
       text-decoration: none;
 }
 
-.landing{
-    text-align: center; 
-    padding: 20px 0; 
-    margin-top: 20px; 
-    background-image: url('headphones_hero_1.jpg');
-    background-size: cover ;
-}
+
+
 h1 {
     font-family: 'Source Sans Pro',sans-serif ;
-    font-size: 80px;
+    font-size: 32px;
     margin-bottom: 16px;
     text-align: center;
     color: white;
@@ -78,6 +138,132 @@ h2 {
     margin-bottom: 30px;
     color: white;
 }
+/*Offerings section or What we do...*/
+.offeringsBlock{
+    text-align: center; 
+    padding: 20px 0; 
+    margin-top: 20px; 
+    background-color: #ffffff;
+    justify-content: center;
+    max-height: 700px;
+}
+
+.offeringsContainer {
+    padding: 20px 120px;
+    max-width: 100%;
+    height: 502px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.offeringsBox{
+    padding-left: 50px;
+    align-items: center;   
+}
+.offerings{
+    font-family: 'source sans pro', sans-serif;
+    color: black;
+    align-items: center;
+}
+
+.offeringsText {
+    color: black;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 14px;
+    align-items: center;
+}
+
+.offeringsBoxTitle {
+    color: black;
+    max-width: 200px;
+    font-size: 16px;
+    align-items: center;
+}
+
+/*Results block / Our Results Speak for Themselves*/
+.resultsBlock {
+     background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    max-height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resultOne,
+.resultTwo,
+.resultThree,
+.resultFour {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.resultsPhoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    gap: 30px;
+}
+
+.resultTextOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.resultTextOverlay h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.resultTextOverlay h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
 
 h3 {
     font-family: 'source sans pro', sans-serif;
@@ -89,9 +275,9 @@ h3 {
 p {
     font-family: 'source sans pro';
     font-size: 16px;
-    font-style: italic;
     padding-top: 4px;
     padding-top: 2px;
     color: white;
+    display: flex;
+    justify-content: center;
 }
-
