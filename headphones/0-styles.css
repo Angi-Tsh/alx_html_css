@@ -1,26 +1,23 @@
+body {
+    font-family: 'sourceSansPro', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
 .logo {
     max-width: 150px;
     margin-left: 200px;
+    position: relative;
+    z-index: 3;
 }
-
-
-.landingBanner{
-    text-align: center; 
-    padding: 20px 0; 
-    margin-top: 20px; 
-    justify-content: center;
-    align-items: center;
-}
-
 
 .landing {
     background-image: url('images/headphones_hero_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     min-height: 100vh;
-    max-height: fit-content;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,25 +31,48 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-header,
-main {
+header {
     position: relative;
-    z-index: 1;
-    width: 100%;
+    z-index: 2;
+    padding: 10px 20px;
 }
 
-.logo {
-    max-width: 150px;
-    position: relative;
-    z-index: 3;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 200px;
+}
+
+li {
+    margin-left: 50px;
+}
+
+a {
+    color: white;
+    font-family: 'sourceSansPro', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .landingBanner {
+    position: relative;
+    z-index: 2;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -64,111 +84,114 @@ main {
     margin: 0 auto;
 }
 
-
-
-
-
-
-header {padding: 10px 20px;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    vertical-align: middle; 
-    align-items: center;
-    padding: 10px 20px;
-}
-ul{ 
-    list-style: none;
-    text-decoration: none;
-    display: flex; 
-    padding: 2px 2px;
-    margin-right: 200px;
-}
-li {
-    margin-left: 50px;
-    text-decoration: none;
-}
-a{
-      color: white;
-      font-family: 'source sans pro';
-      font-weight: 700;
-      font-size: 12px;
-      text-transform: none;
-      text-decoration: none;
+.landingBanner h1 {
+    font-family: 'sourceSansPro', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
 }
 
+.landingBanner h2 {
+    font-family: 'sourceSansPro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: white;
+}
 
+.primaryButton {
+    color: #ffffff;
+    font-family: 'sourceSansPro', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    margin-top: 50px;
+    border-radius: 16px;
+    background-color: #FF6565;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+    background-color: #e55a5a;
+    opacity: 0.9;
+}
+
+.primaryButton:active {
+    background-color: #c04c4c;
+}
+
+.landingBanner p {
+    font-family: 'sourceSansPro', sans-serif;
+    font-size: 16px;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 h1 {
-    font-family: 'Source Sans Pro',sans-serif ;
+    font-family: 'sourceSansPro', sans-serif;
     font-size: 32px;
     margin-bottom: 16px;
     text-align: center;
     color: white;
 }
 
-span{margin-left: 50px;}
+span {
+    margin-left: 50px;
+}
 
-.primaryButton {color: #ffffff;
-    font-family:  'source sans pro',sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px;
-    margin-top: 50px;
-    border-radius: 16px;
-    background-color: #FF6565;
-    align-items: center;
-    justify-content: center;
-}
-button:visited {color:#ffd1d1;
-}
-button:hover {color: #FF6565;
-    opacity: 0.9;
-    border-style: solid;
-}
-button:active {
-    border-style: #524e55;
-}
 h2 {
-    font-family: 'source sans pro',sans-serif;
-    font-weight: 24px;
+    font-family: 'sourceSansPro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
     margin-top: 60px;
     margin-bottom: 30px;
     color: white;
 }
-/*Offerings section or What we do...*/
-.offeringsBlock{
-    text-align: center; 
-    padding: 20px 0; 
-    margin-top: 20px; 
+
+.offeringsBlock {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
     background-color: #ffffff;
-    justify-content: center;
-    max-height: 700px;
+     padding-top: 60px;
+     padding-bottom: 60px;
 }
 
 .offeringsContainer {
-    padding: 20px 120px;
+    padding: 20px 60px;
     max-width: 100%;
-    height: 502px;
-    font-family: 'Source Sans Pro', sans-serif;
+    height: 320px;
+    font-family: 'sourceSansPro', sans-serif;
     font-size: 32px;
     margin-bottom: 40px;
     color: white;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.offeringsBox{
-    padding-left: 50px;
-    align-items: center;   
-}
-.offerings{
-    font-family: 'source sans pro', sans-serif;
-    color: black;
+
+.offeringsBox {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+.offerings {
+    font-family: 'sourceSansPro', sans-serif;
+    color: black;
 }
 
 .offeringsText {
@@ -176,35 +199,32 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
     font-size: 14px;
-    align-items: center;
 }
 
 .offeringsBoxTitle {
     color: black;
     max-width: 200px;
     font-size: 16px;
-    align-items: center;
 }
 
-/*Results block / Our Results Speak for Themselves*/
 .resultsBlock {
-     background-image: url('images/headphones_hero_2.jpg');
+    background-image: url('images/headphones_hero_2.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
-    min-height: 100vh;
-    max-height: fit-content;
+   /* background-attachment: fixed;*/
+    min-height: 80vh;
     position: relative;
     display: flex;
     flex-direction: column;
     z-index: 0;
+    padding-top: 60px;
 }
 
 .resultsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -215,10 +235,10 @@ h2 {
 .resultThree,
 .resultFour {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     overflow: hidden;
-    border-radius: 50%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,13 +249,13 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 2500px;
+    height: 190px;
+    object-fit: fill; /* <-- Change this from 'cover' to 'contain' */
+    /* Or, if you want it to fill the background and potentially crop the pentagon */
+    /* object-fit: cover; */
     z-index: 1;
-    gap: 30px;
 }
-
 .resultTextOverlay {
     position: absolute;
     top: 0;
@@ -262,22 +282,141 @@ h2 {
     margin: 0;
 }
 
-
-
-
 h3 {
-    font-family: 'source sans pro', sans-serif;
+    font-family: 'sourceSansPro', sans-serif;
     font-size: 20px;
     font-weight: bold;
     padding: 2px;
     color: white;
 }
+
 p {
-    font-family: 'source sans pro';
+    font-family: 'sourceSansPro', sans-serif;
     font-size: 16px;
-    padding-top: 4px;
     padding-top: 2px;
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
+
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    padding: 20px 120px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 60px;
+}
+.contactBlock .primaryButton {
+    display: block; 
+    margin: 50px auto 0 auto; 
+}
+
+form {
+    color: black;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    transition: border-bottom-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #FF6565;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contactsText {
+    color: black;
+    text-align: center;
+}
+
+.footerBlock {
+    background-color: #071629;
+    padding: 20px;
+}
+.footerContainer {
+    background-color: #071629;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+.footerContainer .logo {
+    margin-left: 0;
+}
+
+.footerContainer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footerContainer .social-icons a {
+    font-size: 24px;
+}
+
+.footerContainer p {
+    text-align: center;
+    margin: 0;
+}
+
+.footerText {
+    color: #8b8989;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+h1, h2, p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ @font-face { 
+    font-family: 'sourceSansPro'; /* Same name for the same font family */ 
+    src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
+     url('../fonts/MyCustomFont-Bold.woff') format('woff'); 
+     font-weight: normal; /* Define the weight for this specific file */ 
+     font-style: normal; font-display: swap; 
+}  
