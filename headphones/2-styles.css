@@ -411,12 +411,17 @@ h1, h2, p {
     margin-left: auto;
     margin-right: auto;
 }
-.placeholder {
-    font-family: 'sansSourcePro',sans-serif;
-}
 
 
- @font-face { 
+@font-face { 
+    font-family: 'sourceSansPro'; /* Same name for the same font family */ 
+    src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
+     url('../fonts/MyCustomFont-Bold.woff') format('woff'); 
+     font-weight: normal; /* Define the weight for this specific file */ 
+     font-style: normal; font-display: swap; 
+}  
+
+@font-face { 
     font-family: 'sourceSansPro'; /* Same name for the same font family */ 
     src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
      url('../fonts/MyCustomFont-Bold.woff') format('woff'); 

@@ -187,6 +187,7 @@ h2 {
     align-items: center;
     text-align: center;
     width: 250px;
+    
 }
 
 .offerings {
@@ -251,9 +252,7 @@ h2 {
     left: 0;
     width: 2500px;
     height: 190px;
-    object-fit: fill; /* <-- Change this from 'cover' to 'contain' */
-    /* Or, if you want it to fill the background and potentially crop the pentagon */
-    /* object-fit: cover; */
+    object-fit: fill; 
     z-index: 1;
 }
 .resultTextOverlay {
@@ -411,15 +410,13 @@ h1, h2, p {
     margin-left: auto;
     margin-right: auto;
 }
-.placeholder {
-    font-family: 'sansSourcePro',sans-serif;
-}
 
 
- @font-face { 
+@font-face { 
     font-family: 'sourceSansPro'; /* Same name for the same font family */ 
     src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
      url('../fonts/MyCustomFont-Bold.woff') format('woff'); 
      font-weight: normal; /* Define the weight for this specific file */ 
      font-style: normal; font-display: swap; 
 }  
+

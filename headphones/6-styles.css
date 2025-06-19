@@ -161,8 +161,8 @@ h2 {
     padding: 20px 0;
     margin-top: 20px;
     background-color: #ffffff;
-     padding-top: 60px;
-     padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .offeringsContainer {
@@ -211,7 +211,7 @@ h2 {
     background-image: url('images/headphones_hero_2.jpg');
     background-size: cover;
     background-position: center;
-   /* background-attachment: fixed;*/
+    /* background-attachment: fixed;*/
     min-height: 80vh;
     position: relative;
     display: flex;
@@ -235,27 +235,34 @@ h2 {
 .resultThree,
 .resultFour {
     position: relative;
-    width: 190px;
-    height: 190px;
-    overflow: hidden;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
 }
 
-.resultsPhoto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2500px;
-    height: 190px;
-    object-fit: fill; /* <-- Change this from 'cover' to 'contain' */
-    /* Or, if you want it to fill the background and potentially crop the pentagon */
-    /* object-fit: cover; */
-    z-index: 1;
+
+.pentagon {
+    width: 200px;
+    height: 190.16px;
+    background-color: #FF6565;
+
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+    -webkit-clip-path: polygon( /* Webkit prefix for broader browser support */
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
 }
+
 .resultTextOverlay {
     position: absolute;
     top: 0;
@@ -267,7 +274,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    z-index: 2; 
     padding: 10px;
     box-sizing: border-box;
 }
@@ -275,11 +282,13 @@ h2 {
 .resultTextOverlay h1 {
     font-size: 32px;
     margin: 0;
+    color: white; 
 }
 
 .resultTextOverlay h3 {
     font-size: 16px;
     margin: 0;
+    color: white; 
 }
 
 h3 {
@@ -309,8 +318,8 @@ p {
     padding: 60px 60px;
 }
 .contactBlock .primaryButton {
-    display: block; 
-    margin: 50px auto 0 auto; 
+    display: block;
+    margin: 50px auto 0 auto;
 }
 
 form {
@@ -375,7 +384,7 @@ form {
     width: 100%;
     box-sizing: border-box;
     color: white;
-    
+
 }
 
 .footerContainer .logo {
@@ -398,7 +407,7 @@ form {
 
 .footerText {
     color: #8b8989;
-    
+
 }
 img {
     max-width: 100%;
@@ -411,15 +420,13 @@ h1, h2, p {
     margin-left: auto;
     margin-right: auto;
 }
-.placeholder {
-    font-family: 'sansSourcePro',sans-serif;
+
+
+@font-face {
+    font-family: 'sourceSansPro'; /* Same name for the same font family */
+    src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
+      url('../fonts/MyCustomFont-Bold.woff') format('woff');
+      font-weight: normal; /* Define the weight for this specific file */
+      font-style: normal; font-display: swap;
 }
 
-
- @font-face { 
-    font-family: 'sourceSansPro'; /* Same name for the same font family */ 
-    src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
-     url('../fonts/MyCustomFont-Bold.woff') format('woff'); 
-     font-weight: normal; /* Define the weight for this specific file */ 
-     font-style: normal; font-display: swap; 
-}  

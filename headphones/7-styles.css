@@ -163,6 +163,7 @@ h2 {
     background-color: #ffffff;
      padding-top: 60px;
      padding-bottom: 60px;
+     transition: transform 0.4s ease;
 }
 
 .offeringsContainer {
@@ -187,6 +188,14 @@ h2 {
     align-items: center;
     text-align: center;
     width: 250px;
+    /*Add animations*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: rotate360 15s linear infinite;
+}
+
+.offeringsBox:hover {
+    transform: translateX(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .offerings {
@@ -205,6 +214,12 @@ h2 {
     color: black;
     max-width: 200px;
     font-size: 16px;
+}
+.offeringsBox img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    animation: rotate360 15s linear infinite; /* Continuous, slow rotation */
 }
 
 .resultsBlock {
@@ -244,17 +259,22 @@ h2 {
     align-items: center;
     flex-shrink: 0;
 }
-
+.resultOne:hover .resultTextOverlay,
+.resultTwo:hover .resultTextOverlay,
+.resultThree:hover .resultTextOverlay,
+.resultFour:hover .resultTextOverlay {
+    opacity: 1;
+    transform: scale(1.05); /* Slightly enlarge text on hover */
+}
 .resultsPhoto {
     position: absolute;
     top: 0;
     left: 0;
     width: 2500px;
     height: 190px;
-    object-fit: fill; /* <-- Change this from 'cover' to 'contain' */
-    /* Or, if you want it to fill the background and potentially crop the pentagon */
-    /* object-fit: cover; */
+    object-fit: fill; 
     z-index: 1;
+    transition: transform 0.4s ease;
 }
 .resultTextOverlay {
     position: absolute;
@@ -411,15 +431,14 @@ h1, h2, p {
     margin-left: auto;
     margin-right: auto;
 }
-.placeholder {
-    font-family: 'sansSourcePro',sans-serif;
-}
 
 
- @font-face { 
+@font-face { 
     font-family: 'sourceSansPro'; /* Same name for the same font family */ 
     src: url('') format('Source Sans Pro Font/SourceSansPro-Regular.otf'),
      url('../fonts/MyCustomFont-Bold.woff') format('woff'); 
      font-weight: normal; /* Define the weight for this specific file */ 
      font-style: normal; font-display: swap; 
 }  
+
+
